@@ -3,18 +3,18 @@ Implementing two dialogue act taggers using Conditional Random Field.
 ### Baseline tagger features:
 - Speaker change indicator.
 - First utterance indicator.
-- Utterance tokens.
-- Utterance part-of-speech
+- A feature for each tokens in the utterance.
+- A feature for each part-of-speech in the utterance.
 
-### Advanced Tagger: a better performing tagger that uses more 
+### Advanced Tagger:
 - Length of utterance.
-- Bigrams 
+- Bigrams of tokens.
 - various features extracted from tokens string: e.g. IS_UPPER to indicate whether the token is in upper case.
 - A feature for each token and a feature for each POS, like in the baseline.
-- Non-words sounds in the utterance, e.g. <Laughter>
-- Non-words sounds in the previous utterance, e.g. <Laughter>
-- SPEAKER_CHANGE: as in the baseline.
-- A feature of each part-of-speech in the previous utterance.
+- Non-words sounds in the utterance, e.g. \<Laughter>
+- Non-words sounds in the previous utterance, e.g. \<Laughter>
+- Speaker change indicator: as in the baseline.
+- A feature for each part-of-speech in the previous utterance.
 - A Bias feature.
 
 ## Data set
